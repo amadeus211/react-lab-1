@@ -1,120 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <section class="card">
+      <header class="card_header">
+        <img
+          src="https://send.monobank.ua/img/logo_short.png"
+          class="short-logo"
+          alt="monobank logo"
+        />
 
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
-   <link href="./styles.css" rel="stylesheet">
-</head>
-
-<body>
-   <div class="core jarMode">
-      <div class="canvas" style="margin-top: 64px;">
-         <div class="info pure-g">
-            <header class="pure-u-1 pure-u-md-11-24  jarMode"><img src="/img/logo_short.png" class="short-logo">
-               <div class="field firstPadding" style="display: none;"><img src="/img/logo.png" class="full-logo"></div>
-               <div class="field avatar">
-                  <div id="jar-state"><img class="jarLogo  jarLogo-bg" src="/img/jar_bg.png">
-                     <div class="img"
-                        style="background-image: url(&quot;https://ava-img.monobank.com.ua/NqJAEHONJZ4lEaerJztWu5nEAU7VjjldwdA7UMT9Gpw=.jpg&quot;);">
-                     </div>
-                     <div class="jar-container"><img class="glass" src="/img/uah_33.png">
-                        <div class="grid-container"><img src="/img/grid.png" class="grid">
-                           <div class="jar-label jar-goal">900&nbsp;000</div>
-                           <div class="jar-label jar-middle">450&nbsp;000</div>
-                           <div class="jar-label jar-bottom">0</div>
-                        </div>
-                     </div>
-                  </div><img src="/img/jar_badge.svg" class="jar-badge">
-               </div><img src="/img/jar_badge.svg" class="jar-badge">
-               <div class="field jarOwnerInfo"><span>Олександр М. збирає</span></div>
-               <div class="field name"><span>На porshe911</span></div>
-               <div class="field cardInfo">
-                  <div class="description-box wave">Підтримайте🙏</div>
-                  <div class="jar-stats">
-                     <div class="stats-data"><img src="/img/collected.svg" class="icon">
-                        <div class="stats-data-text-container">
-                           <div class="stats-data-label">Накопичено</div>
-                           <div class="stats-data-value">10₴</div>
-                        </div>
-                     </div>
-                     <div class="stats-data"><img src="/img/target.svg" class="icon">
-                        <div class="stats-data-text-container">
-                           <div class="stats-data-label">Ціль</div>
-                           <div class="stats-data-value">900 000₴</div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="field copyright"><span id="x-copyright" style="display: none;">АТ «УНІВЕРСАЛ БАНК» Ліцензія
-                     НБУ
-                     №92 від <br>20.01.1994, у держреєстрі банків №226</span></div>
-            </header>
-            <div class="pure-u-1 pure-u-md-13-24 inputBlock">
-               <div class="firstPadding" style="display: none;"></div>
-               <div class="gradient-container">
-                  <div class="jar-top-up-title">Сума поповнення<img src="/img/money.png" class="money-emoji"></div>
-                  <div class="money-input-container">
-                     <div class="money-input-block ">
-                        <div class="money-input-contenteditable" contenteditable="true" inputmode="decimal">0</div>
-                        <div class="money-input-trailing"> ₴</div>
-                     </div>
-                  </div>
-                  <div class="choice-row">
-                     <div tabindex="0" class="chip-button">
-                        <div class="main-label">+100₴</div>
-                     </div>
-                     <div tabindex="0" class="chip-button">
-                        <div class="main-label">+500₴</div>
-                     </div>
-                     <div tabindex="0" class="chip-button">
-                        <div class="main-label">+1000₴</div>
-                     </div>
-                  </div>
-               </div>
-               <div class="field card-holder"><input id="cardHolder" class="inputF" autocomplete="cc-name"><label
-                     id="x-name-field">Ваше ім'я (необов'язково)</label><span class="err"></span></div>
-               <div class="field payment-comment"><input id="comment" class="inputF" maxlength="160"
-                     autocomplete="off"><label id="x-comment-field">Коментар (необов'язково)</label></div>
-               <div class="mono-pay shown"><img src="/img/mono_pay.svg" alt="mono Pay" class="logo"></div>
-               <div class="tap-to-pay shown">
-                  <div class="gpay-button-fill"><button type="button" aria-label="Google Pay"
-                        class="gpay-button black plain short en"></button></div>
-               </div>
-               <div id="manual-pan-trigger" class="shown">
-                  <div class="splitter"></div>
-                  <div id="card-input-button" tabindex="0"><img src="/img/card.svg" alt="Credit Card" class="card-icon">
-                     <div class="card-input-label" id="x-manual-pan">Оплатити карткою</div>
-                  </div>
-               </div>
-               <span id="x-copyright-2">АТ «УНІВЕРСАЛ БАНК» Ліцензія НБУ №92 від <br>20.01.1994, у держреєстрі
-                  банків
-                  №226</span>
+        <div class="card_jar">
+          <img class="jar_bg" src="https://send.monobank.ua/img/jar_bg.png" />
+          <div class="img" style="background-image: url()"></div>
+          <img
+            class="jar_glass"
+            src="https://send.monobank.ua/img/jar/uah_33.png"
+          />
+          <div class="grid-container">
+            <img src="https://send.monobank.ua/img/jar/grid.png" class="grid" />
+            <div class="jar-label jar-goal">900&nbsp;000</div>
+            <div class="jar-label jar-middle">450&nbsp;000</div>
+            <div class="jar-label jar-bottom">0</div>
+          </div>
+        </div>
+        <div class="card_info">
+          <p class="jar_owner">Олександр М. збирає</p>
+          <p class="goal_of_jar">На porshe911</p>
+          <div class="info">
+            <p>Підтримайте🙏</p>
+          </div>
+          <div class="jar_stats">
+            <div class="stats_data">
+              <img
+                src="https://send.monobank.ua/img/collected.svg"
+                class="icon"
+              />
+              <div class="stats-data-text-container">
+                <div class="stats_data_label">Накопичено</div>
+                <div class="stats_data_value">10&nbsp;₴</div>
+              </div>
             </div>
-         </div>
-         <div class="footer-holder">
-            <div class="footer-copyright">АТ «УНІВЕРСАЛ БАНК» Ліцензія НБУ №92 від <br>20.01.1994, у держреєстрі банків
-               №226</div>
-            <div class="button-holder">
-               <div class="widget-button" tabindex="0">
-                  <div class="widget-button-icon"><img src="/img/cup.svg">
-                     <div class="widget-button-icon-text">Провести розіграш</div>
-                  </div>
-               </div>
-               <div class="widget-button" tabindex="0">
-                  <div class="widget-button-icon"><img src="/img/gamepad.svg">
-                     <div class="widget-button-icon-text">Віджет для стрімів</div>
-                  </div>
-               </div>
+            <div class="stats_data">
+              <img src="https://send.monobank.ua/img/target.svg" class="icon" />
+              <div class="stats-data-text-container">
+                <div class="stats_goal_label">Ціль</div>
+                <div class="stats_goal_value">900&nbsp;000&nbsp;₴</div>
+              </div>
             </div>
-         </div>
+          </div>
+        </div>
+      </header>
+      <div class="card_input">
+        <div class="gradient-back">
+          <div class="gradient-container">
+            <div class="jar-top-up-title">
+              Сума поповнення
+              <img
+                src="https://send.monobank.ua/img/money.png"
+                class="money-emoji"
+              />
+            </div>
+            <div class="money-input-block">
+              <div class="money-input-block">
+                <div
+                  class="money-input-contenteditable"
+                  contenteditable="true"
+                  inputmode="decimal"
+                >
+                  0
+                </div>
+                <div class="money-input-trailing">&nbsp;₴</div>
+              </div>
+            </div>
+            <div class="money-input-subtitle hidden">
+              Сума повинна бути від 10&nbsp;₴ до 29&nbsp;999&nbsp;₴
+            </div>
+            <div class="choise-row">
+              <div
+                tabindex="0"
+                class="chip-button"
+                onclick="increaseAmount(100)"
+              >
+                <div class="main-label">+100&nbsp;₴</div>
+              </div>
+              <div
+                tabindex="0"
+                class="chip-button"
+                onclick="increaseAmount(500)"
+              >
+                <div class="main-label">+500&nbsp;₴</div>
+              </div>
+              <div
+                tabindex="0"
+                class="chip-button"
+                onclick="increaseAmount(1000)"
+              >
+                <div class="main-label">+1&nbsp;000&nbsp;₴</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="field card-holder">
+          <input
+            id="cardHolder"
+            class="inputF"
+            autocomplete="cc-name"
+            placeholder="Ваше ім'я (необов'язково)"
+          />
+          <span class="err"></span>
+        </div>
+        <div class="field payment-comment">
+          <input
+            id="comment"
+            class="inputF"
+            maxlength="160"
+            autocomplete="off"
+            placeholder="Коментар (необов'язково)"
+          />
+        </div>
+        <div
+          class="mono-pay shown"
+          onclick="handlePaymentButtonClick('monoPay')"
+        >
+          <img
+            src="https://send.monobank.ua/img/mono_pay.svg"
+            alt="mono Pay"
+            class="logo"
+          />
+        </div>
+        <div
+          class="tap-to-pay shown"
+          onclick="handlePaymentButtonClick('googlePay')"
+        >
+          <div class="gpay-button-fill">
+            <button
+              type="button"
+              aria-label="Google Pay"
+              class="gpay-button black plain short uk"
+            ></button>
+          </div>
+        </div>
+        <div id="manual-pan-trigger" class="shown">
+          <div class="splitter"></div>
+          <div id="card-input-button" tabindex="0">
+            <img
+              src="https://send.monobank.ua/img/card.svg"
+              alt="Credit Card"
+              class="card-icon"
+            />
+            <div class="card-input-label" id="x-manual-pan">
+              Оплатити карткою
+            </div>
+          </div>
+        </div>
       </div>
-
-   </div>
-   </div>
-
-   <script src="script.js"></script>
-</body>
-
-</html
+    </section>
+    <div class="card_footer">
+      <div class="footer_info">
+        АТ «УНІВЕРСАЛ БАНК» Ліцензія НБУ №92 від
+        <br />
+        20.01.1994, у держреєстрі банків №226
+      </div>
+      <div class="footer_buttons">
+        <div class="widget-button" tabindex="0">
+          <div class="widget-button-icon">
+            <img src="https://send.monobank.ua/img/cup.svg" />
+            <div class="widget-button-icon-text">Провести розіграш</div>
+          </div>
+        </div>
+        <div class="widget-button" tabindex="0">
+          <div class="widget-button-icon">
+            <img src="https://send.monobank.ua/img/gamepad.svg" />
+            <div class="widget-button-icon-text">Віджет для стрімів</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
